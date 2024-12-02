@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Buscar Show</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .search-form {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .search-form input, .search-form button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Buscar Show</h1>
+    <div class="search-form">
+        <form action="/searchShows" method="post">
+            <input type="text" name="query" placeholder="Ingresa el nombre del show" required>
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+</body>
+</html>
